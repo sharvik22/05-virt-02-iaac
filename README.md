@@ -66,8 +66,8 @@ Error: The requested URL returned error: 404:
 **Важно:**    
 - Если ваша хостовая рабочая станция - это windows ОС, то у вас могут возникнуть проблемы со вложенной виртуализацией. Ознакомиться со cпособами решения можно [по ссылке](https://www.comss.ru/page.php?id=7726).
 
-- Если вы устанавливали hyper-v или docker desktop, то  все равно может возникать ошибка:  
-`Stderr: VBoxManage: error: AMD-V VT-X is not available (VERR_SVM_NO_SVM)`   
+- Если вы устанавливали hyper-v или docker desktop, то  все равно может возникать ошибка:
+  `Stderr: VBoxManage: error: AMD-V VT-X is not available (VERR_SVM_NO_SVM)`   
  Попробуйте в этом случае выполнить в Windows от администратора команду `bcdedit /set hypervisorlaunchtype off` и перезагрузиться.
 
 - Если ваша рабочая станция в меру различных факторов не может запустить вложенную виртуализацию - допускается неполное выполнение(до ошибки запуска ВМ)
@@ -91,17 +91,6 @@ sudo apt-get update
 sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients virt-manager
 
 ![image](https://github.com/user-attachments/assets/1b45de90-db41-4a82-8128-efc9b0716192)
-
-root@vagrant:/home/admon/vagrant# vagrant up
-Bringing machine 'default' up with 'libvirt' provider...
-==> default: Box 'ubuntu/trusty64' could not be found. Attempting to find and install...
-    default: Box Provider: libvirt
-    default: Box Version: >= 0
-The box 'ubuntu/trusty64' could not be found or
-could not be accessed in the remote catalog. If this is a private
-box on HashiCorp's Vagrant Cloud, please verify you're logged in via
-`vagrant login`. Also, please double-check the name. The expanded
-URL and error message are shown below:
 
 URL: ["https://vagrantcloud.com/ubuntu/trusty64"]
 Error: The requested URL returned error: 404 Not Found
