@@ -32,6 +32,14 @@
 
 ## Решение 1
 
+![image](https://github.com/user-attachments/assets/7c8869d2-0a63-481e-9d74-ccde929f9b83)
+
+![image](https://github.com/user-attachments/assets/039ac509-9499-4eb5-af30-549fc6e26917)
+
+![image](https://github.com/user-attachments/assets/086f5ca4-6815-4a55-aca5-2505f2559bfe)
+
+![image](https://github.com/user-attachments/assets/2bc0441d-bfc4-4029-b8d1-cd8c18ee6475)
+
 
 ---
 
@@ -66,6 +74,44 @@ Error: The requested URL returned error: 404:
 
 ## Решение 2
 
+![image](https://github.com/user-attachments/assets/2aec2e94-15d4-400a-bf04-f697bcfaee50)
+
+Скачиваем образ ubuntu
+
+![image](https://github.com/user-attachments/assets/9f49f0f6-f4e1-4160-b2ef-a3aaea131f70)
+
+
+Добавляем этот  образ в Vagrant
+
+![image](https://github.com/user-attachments/assets/f858bdb6-0c8a-4851-9902-01f26d17a267)
+
+ВАЖНО
+
+sudo apt-get update
+sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients virt-manager
+
+![image](https://github.com/user-attachments/assets/1b45de90-db41-4a82-8128-efc9b0716192)
+
+root@vagrant:/home/admon/vagrant# vagrant up
+Bringing machine 'default' up with 'libvirt' provider...
+==> default: Box 'ubuntu/trusty64' could not be found. Attempting to find and install...
+    default: Box Provider: libvirt
+    default: Box Version: >= 0
+The box 'ubuntu/trusty64' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Vagrant Cloud, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://vagrantcloud.com/ubuntu/trusty64"]
+Error: The requested URL returned error: 404 Not Found
+
+![image](https://github.com/user-attachments/assets/db505dfa-1e69-4f0c-a6ed-cb940c012bf6)
+
+![image](https://github.com/user-attachments/assets/09bf4a41-5f66-479d-a7db-03629fad728f)
+
+
+![image](https://github.com/user-attachments/assets/a1e1b1d3-c7df-4dbb-83bd-4e1d2aa67ef8)
 
 ---
 
